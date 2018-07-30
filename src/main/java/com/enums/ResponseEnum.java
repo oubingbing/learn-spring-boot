@@ -1,0 +1,1 @@
+package com.enums;import lombok.Getter;@Getterpublic enum ResponseEnum {    ORDER_NOT_EXIST(1,"订单不存在");    private Integer code;    private String message;    ResponseEnum(Integer code,String message){        this.code = code;        this.message = message;    }}

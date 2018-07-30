@@ -13,6 +13,7 @@ import java.math.BigDecimal;
 @Data
 public class ResponseProductInfo {
 
+    //做字段的映射
     @JsonProperty("id")
     private String productId;
 

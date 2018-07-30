@@ -27,6 +27,13 @@ public class BuyerProductController {
     @Autowired
     private CategoryServiceImpl categoryService;
 
+    /**
+     * 商品列表
+     *
+     * @author yezi
+     *
+     * @return
+     */
     @GetMapping("/list")
     public Response list(){
 
@@ -71,8 +78,4 @@ public class BuyerProductController {
         return ResponseResult.success(responseProductList);
     }
 
-    @GetMapping("/test")
-    public String index(){
-        return "hello world";
-    }
 }
