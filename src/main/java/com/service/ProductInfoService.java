@@ -1,5 +1,6 @@
 package com.service;
 
+import com.dataTransferObject.CartDTO;
 import com.dataobject.ProductInfo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -34,4 +35,16 @@ public interface ProductInfoService {
      * @return
      */
     List<ProductInfo> findByStatus(Integer ProductStatus);
+
+    /**
+     * 增加库存
+     * @param cartDTOS
+     */
+    void increaseStock(List<CartDTO> cartDTOS);
+
+    /**
+     * 减少库存
+     * @param cartDTOS
+     */
+    void decreaseStock(List<CartDTO> cartDTOS);
 }
