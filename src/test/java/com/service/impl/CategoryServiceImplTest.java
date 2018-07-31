@@ -1,6 +1,8 @@
 package com.service.impl;
 
-import com.dataobject.ProductCategory;
+import com.sell.dataobject.ProductCategory;
+import com.sell.service.CategoryService;
+import com.sell.service.impl.CategoryServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,14 +14,12 @@ import javax.transaction.Transactional;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.*;
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class CategoryServiceImplTest {
 
     @Autowired
-    private CategoryServiceImpl service;
+    private CategoryService service;
 
     @Test
     public void findByCategoryId() throws Exception {

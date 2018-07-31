@@ -1,6 +1,7 @@
 package com.repository;
 
-import com.dataobject.ProductCategory;
+import com.sell.dataobject.ProductCategory;
+import com.sell.repository.ProductCategoryRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,8 +13,6 @@ import javax.transaction.Transactional;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

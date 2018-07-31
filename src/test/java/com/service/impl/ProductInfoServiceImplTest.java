@@ -1,7 +1,8 @@
 package com.service.impl;
 
-import com.dataobject.ProductInfo;
-import com.enums.ProductStatusEnum;
+import com.sell.dataobject.ProductInfo;
+import com.sell.enums.ProductStatusEnum;
+import com.sell.service.impl.ProductInfoServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,8 +15,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import javax.transaction.Transactional;
 import java.math.BigDecimal;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
