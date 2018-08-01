@@ -1,4 +1,4 @@
-package com.repository;
+package com.sell.repository;
 
 import com.sell.dataobject.ProductCategory;
 import com.sell.repository.ProductCategoryRepository;

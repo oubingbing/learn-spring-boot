@@ -20,4 +20,19 @@ public class ResponseResult {
 
         return  response;
     }
+
+    /**
+     * 返回失败
+     * @param code
+     * @param message
+     * @return
+     */
+    public static Response fail(Integer code,String message){
+        Response response = new Response();
+        response.setCode(code);
+        response.setMessage(message);
+        response.setData(null);
+
+        return response;
+    }
 }

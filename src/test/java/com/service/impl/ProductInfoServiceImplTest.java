@@ -1,4 +1,4 @@
-package com.service.impl;
+package com.sell.service.impl;
 
 import com.sell.dataobject.ProductInfo;
 import com.sell.enums.ProductStatusEnum;

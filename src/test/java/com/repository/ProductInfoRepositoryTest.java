@@ -1,7 +1,7 @@
-package com.repository;
+package com.sell.repository;
 
 import com.sell.dataobject.ProductInfo;
-import com.sell.repository.ProductInfoRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,9 +12,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 import javax.transaction.Transactional;
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.UUID;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@Slf4j
 public class ProductInfoRepositoryTest {
     @Autowired
     private ProductInfoRepository repository;
@@ -37,6 +39,7 @@ public class ProductInfoRepositoryTest {
 
     @Test
     public void findByProductIdTest(){
+        log.info("测试UUID: " + UUID.randomUUID().toString());
         ProductInfo productInfo = repository.findByProductId("0002");
         Assert.assertNotNull(productInfo);
     }
